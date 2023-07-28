@@ -2,19 +2,26 @@
     background: #FFF;
     border: 1px solid #DDD;
     border-radius: 4px;
-    padding: 10px 15px;
     font-size: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: fit-content;
+    width: max-content;
     margin: auto;
     font:inherit;
-    
+    padding: 20px
+
 }
 .content{
     display: flex;
     flex-direction: column;
+    gap: 20px
     
+}
+.input {
+    width: 280px;
+    font:inherit;
+    height: 35px;
+    border: 1px solid #DDD
 }

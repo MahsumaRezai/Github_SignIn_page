@@ -4,10 +4,10 @@ const Form = (props) => {
         <form className={classes.form}>
             <div className={classes.content}>
                 <label>Username or email address</label>
-                <input></input>
+                <input className={classes.input}></input>
 
                 <label>Password</label>
-                <input></input>
+                <input className={classes.input}></input>
                 <button>send</button>
             </div>
 
