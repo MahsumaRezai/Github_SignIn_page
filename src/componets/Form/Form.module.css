@@ -1,0 +1,20 @@
+.form {
+    background: #FFF;
+    border: 1px solid #DDD;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: fit-content;
+    margin: auto;
+    font:inherit;
+    
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    
+}
