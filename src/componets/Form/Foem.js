@@ -1,4 +1,5 @@
 import classes from './Form.module.css'
+import Button from '../Button/Button';
 const Form = (props) => {
     return (
         <form className={classes.form}>
@@ -8,7 +9,7 @@ const Form = (props) => {
 
                 <label>Password</label>
                 <input className={classes.input}></input>
-                <button>send</button>
+                <Button>Sign In</Button>
             </div>
 
         </form>
