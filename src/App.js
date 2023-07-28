@@ -1,7 +1,10 @@
-
+import Head from './componets/Head/Head'
+import { Fragment } from 'react';
 const App = props => {
   return (
-    <h1>kkrkrk</h1>
+    <Fragment>
+      <Head/>
+      </Fragment>
   )
 }
 
