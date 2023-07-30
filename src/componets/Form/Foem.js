@@ -1,6 +1,6 @@
 import classes from './Form.module.css'
 import Button from '../Button/Button';
-import { useState } from 'react';
+import { useState, Fragment } from 'react';
 
 const Form = (props) => {
     const [email, setEmail] = useState('');
@@ -27,6 +27,7 @@ const Form = (props) => {
     }
 
     return (
+        <Fragment>
         <form className={classes.form} onSubmit={FormHandler}>
             <div className={classes.content}>
                 <label>Username or email address</label>
@@ -40,6 +41,7 @@ const Form = (props) => {
             </div>
 
         </form>
+        </Fragment>
     )
 }
 export default Form;

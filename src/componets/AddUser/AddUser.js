@@ -1,6 +1,9 @@
 import classes from './Add.module.css'
+import { Fragment } from 'react';
 const AddUser = (props) => {
     return (
+        <Fragment>
+
         <div className={classes.content}>
             <div className={classes.text}>
                 <span>New to GitHub?</span>
@@ -10,6 +13,7 @@ const AddUser = (props) => {
             </div>
 
         </div>
+        </Fragment>
 
     )
 }
