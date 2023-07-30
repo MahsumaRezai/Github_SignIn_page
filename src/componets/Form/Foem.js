@@ -1,14 +1,41 @@
 import classes from './Form.module.css'
 import Button from '../Button/Button';
+import { useState } from 'react';
+
 const Form = (props) => {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [enterPassword, setEnterdPasswod] = useState(false);
+    const [enterEmail, setEnterdEmail] = useState(false);
+    const FormHandler = (event) => {
+        event.preventDefault();
+        if (email.trim().length === 0) {
+            setEnterdEmail(true)
+        }
+        if (password.trim().length === 0) {
+            setEnterdPasswod(true)
+        }
+
+    }
+
+    const emailHanlder = (event) => {
+        setEmail(event.target.value);
+
+    }
+    const passwordHandler = (event) => {
+        setPassword(event.target.value)
+    }
+
     return (
-        <form className={classes.form}>
+        <form className={classes.form} onSubmit={FormHandler}>
             <div className={classes.content}>
                 <label>Username or email address</label>
-                <input className={classes.input}></input>
+                <input className={classes.input} onChange={emailHanlder} />
+                {enterEmail && <p className={classes.text}> Plases Enter your Email</p>}
 
                 <label>Password</label>
-                <input className={classes.input}></input>
+                <input className={classes.input} onChange={passwordHandler} />
+                {enterPassword && <p className={classes.text}>Plases Enter your Password</p>}
                 <Button>Sign In</Button>
             </div>
 
